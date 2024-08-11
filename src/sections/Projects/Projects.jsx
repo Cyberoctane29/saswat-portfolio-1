@@ -12,22 +12,22 @@ function Projects() {
           src={NMT}
           link="https://github.com/Cyberoctane29/Language-Translation-System-Using-Neural-Networks"
           alt="Neural Machine Translation Project"
-          h3="Language Translation System Using Neural Network"
-          p="Neural network-based solution for seamless language translation."
+          h3="Neural Translation System"
+          p="AI-driven language translation."
         />
         <ProjectCard
           src={FetchUserData}
           link="https://github.com/Cyberoctane29/Fetch-user-data"
           alt="Fetch User Data Project"
-          h3="User Data Retrieval via API"
-          p="Streamlined user data fetching through API integration."
+          h3="API Data Retrieval"
+          p="Efficient user data fetching."
         />
         <ProjectCard
           src={OpenCVProject}
           link="https://github.com/Cyberoctane29/OpenCV-Interactive-Painting-and-Color-Extraction-System"
           alt="OpenCV - Interactive Painting and Color Extraction System"
-          h3="OpenCV-Interactive Painting and Color Extraction System"
-          p="An immersive painting tool with color extraction capabilities."
+          h3="Interactive Painting Tool"
+          p="Painting with color extraction."
         />
       </div>
     </section>
