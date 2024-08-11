@@ -12,7 +12,7 @@ function Projects() {
           src={NMT}
           link="https://github.com/Cyberoctane29/Language-Translation-System-Using-Neural-Networks"
           alt="Neural Machine Translation Project"
-          h3="Language Translation System Using Neural Networks"
+          h3="Language Translation System Using Neural Network"
           p="Neural network-based solution for seamless language translation."
         />
         <ProjectCard
