@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  img {
+    max-width: 250px; /* Set max width for images */
+    align-self: center; /* Center the image within the container */
+    background-color: var(--project-card-bg); /* Set background color */
+    border-radius: 20px; /* Round the corners */
+  }
+  a {
+    width: fit-content; /* Set width to fit content */
+    text-decoration: none; /* Remove underline from links */
+    color: #222; /* Set link color */
+    transition: transform 200ms ease-in-out; /* Smooth transition for scaling */
+  }
+
+  a:hover {
+    transform: scale(1.05); /* Scale up the link on hover */
+  }
+}
+.projectsContainer {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items horizontally */
+  gap: 30px; /* Add space between items */
+}
+
+@media (width >= 800px) {
+  .projectsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 30px;
+  }
+}
