@@ -4,8 +4,25 @@
   justify-content: center;
   gap: 20px;
   text-align: center;
-  height: 100dvh; /* Consider using 100vh instead, see explanation below */
+  height: 100dvh;
   min-height: 500px;
+
+  /* Font size for mobile */
+  h1 {
+    font-size: 1.7rem; /* Adjust as needed */
+  }
+
+  h2 {
+    font-size: 1.2rem; /* Adjust as needed */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust as needed */
+  }
+
+  button {
+    font-size: 1rem; /* Adjust as needed */
+  }
 
   .hero {
     max-width: 170px;
@@ -35,22 +52,19 @@
     color: var(--btn-text-color);
     border: none;
     border-radius: 20px;
-    width: 126px; /* You can adjust this for responsiveness */
+    width: 126px;
     height: 50px;
-    font-size: 20px;
     font-weight: bold;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
   }
 
   button:hover {
-    transform: scale(1.05); /* Fixed the syntax issue */
+    transform: scale(1.05);
   }
 
   button:active {
-    transform: translateY(
-      2px
-    ); /* Removed space between translateY and parentheses */
+    transform: translateY(2px);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   }
 }
@@ -80,7 +94,7 @@
   gap: 20px;
 }
 
-@media (width >= 800px) {
+@media (min-width: 800px) {
   .container {
     flex-direction: row-reverse;
     align-items: center;
@@ -90,14 +104,46 @@
       max-width: 350px;
       width: 350px;
     }
+
+    h1 {
+      font-size: 2.5rem; /* Increased size for tablet */
+    }
+
+    h2 {
+      font-size: 1.7rem; /* Increased size for tablet */
+    }
+
+    p {
+      font-size: 1.25rem; /* Increased size for tablet */
+    }
+
+    button {
+      font-size: 20px; /* Increased size for tablet */
+    }
   }
 }
 
-@media (width >= 1400px) {
+@media (min-width: 1400px) {
   .container {
     .hero {
       max-width: 400px;
       width: 400px;
+    }
+
+    h1 {
+      font-size: 3rem; /* Increased size for desktop */
+    }
+
+    h2 {
+      font-size: 24px; /* Increased size for desktop */
+    }
+
+    p {
+      font-size: 20px; /* Increased size for desktop */
+    }
+
+    button {
+      font-size: 20px; /* Increased size for desktop */
     }
   }
 }
